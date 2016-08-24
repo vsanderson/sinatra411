@@ -1,5 +1,5 @@
 require 'sinatra' 
-require 'sinatra/reloader'
+#require 'sinatra/reloader'
 require 'haml'  
 
 get '/my_template' do
