@@ -1,0 +1,11 @@
+%h1 Feeling Friendly
+%form{:action => "/feeling", :method => "post"}
+  %legend
+    A simple question
+  %p
+    %label{:for => ""} How are you feeling today?
+    %input{:type => "textbox", :name => "feeling", :id => "feeling"}
+  %p
+    %input{:type => "submit", :value => "Let us know!"}
+    
+    

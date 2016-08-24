@@ -1,0 +1,16 @@
+
+:javascript 
+$(document).ready(function() { 
+	$("#start").click(function() { 
+		$.ajax( {url:"/start", success:function(result) { 
+			$("#message").html(result); }}); });  
+			$("#stop").click(function() { 
+				$.ajax( {url:"/stop", success:function(result) { 
+					$("#message").html(result); }}); }); }); 
+					
+					%button#start Start 
+					%button#stop Stop  
+					
+					@@start It has started  
+					
+					@@stop It stopped
